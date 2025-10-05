@@ -97,9 +97,8 @@
                 <a href="index.html" class="nav-item nav-link active">হোম</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">জেলা</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="districts.html?district=jamalpur" class="dropdown-item">জামালপুর</a>
-                        <a href="districts.html?district=sirajgonj" class="dropdown-item">সিরাজগঞ্জ</a>
+                    <div id="district-nav" class="dropdown-menu fade-up m-0">
+                        <!-- Content dynamically loaded by JS -->
                     </div>
                 </div>
                 <a href="#about-us" class="nav-item nav-link">আমাদের সম্পর্কে</a>
@@ -212,7 +211,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- <script src="js/details.js"></script> -->
+    <script src="js/build.js"></script>
     <script src="js/places.js"></script>
     <script>
         window.addEventListener("DOMContentLoaded", () => {
@@ -225,100 +224,6 @@
             generateSummaryCards(districtID, container);
 
         })
-
-        const districts = [
-            {
-                id: "dhaka",
-                places: [
-                    "lalbagh_fort",
-                    "ahsan_manzil",
-                    "national_museum",
-                    "sonargaon",
-                ],
-            },
-            {
-                id: "chittagong",
-                places: [
-                    "patenga_beach",
-                    "foy's_lake",
-                    "karnaphuli_river",
-                    "chittagong_hill_tracts",
-                ],
-            },
-            {
-                id: "rajshahi",
-                places: [
-                    "motihar_park",
-                    "varendra_museum",
-                    "bagha_mosque",
-                    "puthia_temple_complex",
-                ],
-            },
-            {
-                id: "sylhet",
-                places: [
-                    "jaflong",
-                    "ratargul_swamp_forest",
-                    "maulvibazar",
-                    "tea_gardens",
-                ],
-            },
-            {
-                id: "khulna",
-                places: [
-                    "sundarbans",
-                    "khulna_zoo",
-                    "shatgombuj_mosque",
-                    "bagerhat",
-                ],
-            },
-            {
-                id: "barishal",
-                places: [
-                    "khepupara_beel",
-                    "durga_sagar",
-                    "taltoli_bridge",
-                    "barishal_zoo",
-                ],
-            },
-            {
-                id: "rangpur",
-                places: [
-                    "tajhat_palace",
-                    "khan_bari",
-                    "badarganj",
-                    "paharpur_buddhist_monastery",
-                ],
-            },
-            {
-                id: "mymensingh",
-                places: [
-                    "bangladesh_agricultural_university",
-                    "shingra_beel",
-                    "gomostapur",
-                    "paradip_garden",
-                ],
-            },
-            {
-                id: "jessore",
-                places: [
-                    "shundarban_gate",
-                    "keshabpur",
-                    "chatra_beel",
-                    "jessore_zoo",
-                ],
-            },
-            {
-                id: "sirajgonj",
-                places: [
-                    "rabindra_kachari_bari",
-                    "chalan_beel",
-                    "naborotno_temple",
-                    "china_dam",
-                ],
-            }
-        ];
-
 
         function generateSummaryCards(districtID, container) {
             const dist = districts.find((s) => s.id === districtID);

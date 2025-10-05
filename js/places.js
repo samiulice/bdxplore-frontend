@@ -4,6 +4,8 @@ const places = {
       // district
       id: "ahsan_manzil",
       name: "আহসান মঞ্জিল",
+      image:"img/ahsan_manzil.jpg",
+      thumbnail:"img/ahsan_manzil_thumb.jpg",
       location: "ইসলামপুর, ঢাকা",
       description:
         "আহসান মঞ্জিল ঢাকার একটি ঐতিহাসিক প্রাসাদ, নবাবদের আবাসস্থল এবং বর্তমানে একটি জাদুঘর।",
@@ -53,6 +55,8 @@ const places = {
     {
       id: "lalbagh_fort",
       name: "লালবাগ কেল্লা",
+      image:"img/lalbagh_fort.jpg",
+      thumbnail:"img/lalbagh_fort_thumb.jpg",
       location: "লালবাগ, পুরান ঢাকা",
       description:
         "লালবাগ কেল্লা মোগল আমলের ঐতিহাসিক দূর্গ, বুড়িগঙ্গার তীরে অবস্থিত।",
@@ -180,7 +184,7 @@ const places = {
     {
       id: "china_dam",
       name: "চায়না বাঁধ",
-      imge:"img/china_dam.jpg",
+      image:"img/china_dam.jpg",
       thumbnail:"img/china_dam.jpg",
       location: "সিরাজগঞ্জ শহর, যমুনা নদীর তীর",
       description:
@@ -205,7 +209,7 @@ const places = {
     },
     {
       id: "naborotno_temple",
-      imge:"img/naborotno_temple.jpg",
+      image:"img/naborotno_temple.jpg",
       thumbnail:"img/naborotno_temple_thumb.jpg",
       name: "নবরত্ন মন্দির",
       location: "হাটিকুমরুল, সিরাজগঞ্জ",
