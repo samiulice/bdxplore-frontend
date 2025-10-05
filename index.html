@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>District Overview - Carpenter Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">
+                <!-- Logo Section Start -->
+                <section class="logo-section py-5 text-center">
+                    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+                        <!-- SVG Logo -->
+                        <svg viewBox="0 0 410 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="150"
+                            height="120">
+                            <g id="BDXplore_Logo">
+                                <!-- Icon -->
+                                <g id="Icon" transform="translate(0, 5)">
+                                    <rect x="5" y="5" width="130" height="130" rx="25" fill="#006A4E" />
+                                    <path d="M 35 105 L 65 55 L 95 105 H 75 L 65 85 L 55 105 Z" fill="#ffffff" />
+                                    <path d="M 65 55 L 95 105 L 115 105 L 85 55 L 65 55 Z" fill="#ffffff"
+                                        opacity="0.8" />
+                                    <circle cx="65" cy="45" r="18" fill="#FF8C00" />
+                                </g>
+                                <!-- Text -->
+                                <g id="Text" transform="translate(150, 0)">
+                                    <text x="0" y="70" style="
+                                font-size: 54px;
+                                font-weight: 900;
+                                font-family: sans-serif;
+                            ">
+                                        <tspan fill="#006A4E">BD</tspan>
+                                        <tspan fill="#FF8C00">Xplore</tspan>
+                                    </text>
+                                    <text x="0" y="105" fill="#444444" style="
+                        font-size: 25px;
+                        font-weight: 800;
+                        letter-spacing:1px;
+                        font-family: sans-serif;
+                      ">
+                                        Discover Bangladesh
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </section>
+                <!-- Logo Section End -->
+            </h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">হোম</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">জেলা</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="districts.html?district=jamalpur" class="dropdown-item">জামালপুর</a>
+                        <a href="districts.html?district=sirajgonj" class="dropdown-item">সিরাজগঞ্জ</a>
+                    </div>
+                </div>
+                <a href="#about-us" class="nav-item nav-link">আমাদের সম্পর্কে</a>
+            </div>
+            <a href="#most-visited-places" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">জনপ্রিয় গন্তব্যসমূহ<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, 0.7)">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                    চলুন ঘুরে আসি বাংলাদেশের প্রতিটি কোণে
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">
+                                    সাজেক - প্রকৃতির শান্ত রাজ্য
+                                </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                    মেঘে ঢাকা সকাল, সবুজে ঘেরা পাহাড় আর নিরব শান্তি — প্রকৃতির
+                                    অপার সৌন্দর্যে ডুবে যান।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, 0.7)">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                    স্বাগতম বাংলাদেশের সমুদ্র পথে
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">
+                                    কক্সবাজার - বিশ্বের দীর্ঘতম সমুদ্র সৈকত
+                                </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                    কক্সবাজার, সেন্ট মার্টিন আর কুয়াকাটার অপার সৌন্দর্যে ডুবে
+                                    যান। ভ্রমণ হোক আনন্দের, স্মৃতিময়তার ছোঁয়ায়।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, 0.7)">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                    ইতিহাসের শহর ঢাকা
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">
+                                    আহসান মঞ্জিল - প্রাচীন ঢাকার গৌরব
+                                </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                    বুড়িগঙ্গার তীরে দাঁড়িয়ে আছে ঢাকার রাজকীয় ইতিহাসের সাক্ষী —
+                                    আহসান মঞ্জিল। এক সময় এটি ছিল ঢাকার নওয়াব পরিবারের
+                                    কেন্দ্রস্থল, আজ তা ইতিহাসের জ্বলন্ত দলিল।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div id="most-visited-places" class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">দর্শনীয় স্থানসমূহ</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/cox-bazar.jpg" alt="Cox's Bazar" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">কক্সবাজার</h4>
+                            <p>
+                                বিশ্বের দীর্ঘতম সমুদ্র সৈকত, নীল আকাশ ও সোনালি বালুর মেলবন্ধন
+                                — এক অপরূপ স্বর্গভূমি।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=coxsbazar_beach">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/shajek.jpg" alt="Sajek Valley" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">সাজেক ভ্যালি</h4>
+                            <p>
+                                মেঘের রাজ্য সাজেক, যেখানে পাহাড়, সূর্য আর মেঘ মিলেমিশে সৃষ্টি
+                                করেছে এক জাদুকরী দৃশ্যপট।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=sajek_valley">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/kuakata-beach.jpg" alt="Kuakata" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">কুয়াকাটা</h4>
+                            <p>
+                                বাংলাদেশের একমাত্র স্থান যেখানে সূর্যোদয় ও সূর্যাস্ত একসাথে
+                                দেখা যায় — ‘সাগরকন্যা’ কুয়াকাটা।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=kuakata_beach">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/nilgiri.png" alt="Nilgiri" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">নীলগিরি</h4>
+                            <p>
+                                বাংলাদেশের সবচেয়ে উঁচু পর্যটন কেন্দ্রগুলোর একটি, যেখানে আকাশ
+                                ছুঁয়ে থাকে পাহাড়ের চূড়া।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=nilgiri_hill">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/saint-martin.jpg" alt="Saint Martin" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">সেন্ট মার্টিন</h4>
+                            <p>
+                                নীল জল, নারিকেল গাছ আর প্রবাল দ্বীপের শান্ত সৌন্দর্য — সেন্ট
+                                মার্টিন প্রকৃতির এক অনন্য দান।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=saint_martin">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./img/uttora-gonovobon.jpg" alt="Uttara Gonobhaban" />
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">উত্তরা গণভবন</h4>
+                            <p>
+                                রাজশাহীর নাটোরে অবস্থিত ঐতিহাসিক প্রাসাদ, এক সময়ের রাজবাড়ি আজ
+                                রাষ্ট্রপতির উত্তরাঞ্চলীয় বাসভবন।
+                            </p>
+                            <a class="fw-medium" href="details.html?place=uttara_gonovobon">আরও জানুন<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Address Section -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">ঠিকানা</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>মতিহার, রাজশাহী, বাংলাদেশ
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+৮৮০ ১৭০১ ২৯৫০৩৯
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>info@bdxplore.com
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/bdxplore/?lang=eng"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/bdxplore"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/bdxplore"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/bdxplore"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">দ্রুত লিংক</h4>
+                    <a class="btn btn-link" href="#">আমাদের সম্পর্কে</a>
+                    <a class="btn btn-link" href="#contact-us">যোগাযোগ করুন</a>
+                    <a class="btn btn-link" href="#most-visited-places">পর্যটন স্থান</a>
+                </div>
+
+                <!-- Popular Destinations Section -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">জনপ্রিয় গন্তব্যসমূহ</h4>
+                    <p>
+                        <i class="fa fa-location-dot me-2"></i>কক্সবাজার – বিশ্বের দীর্ঘতম
+                        সমুদ্র সৈকত
+                    </p>
+                    <p>
+                        <i class="fa fa-location-dot me-2"></i>সাজেক ভ্যালি – মেঘের রাজ্য
+                    </p>
+                    <p>
+                        <i class="fa fa-location-dot me-2"></i>সেন্ট মার্টিন – প্রবাল
+                        দ্বীপ
+                    </p>
+                    <p>
+                        <i class="fa fa-location-dot me-2"></i>কুয়াকাটা – সূর্যোদয় ও
+                        সূর্যাস্তের সৈকত
+                    </p>
+                    <p>
+                        <i class="fa fa-location-dot me-2"></i>সুন্দরবন – রয়েল বেঙ্গল
+                        টাইগারের আবাস
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">BDXplore</a>, সর্বস্বত্ব
+                        সংরক্ষিত।
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
