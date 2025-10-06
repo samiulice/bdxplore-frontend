@@ -569,7 +569,7 @@ function generateTouristInfo(id, container) {
         ${
           spot.attractions?.length
             ? `
-          <h4>দর্শনীয় স্থানসমূহ:</h4>
+          <h4>সর্বাধিক দর্শনীয় স্থানসমূহ:</h4>
           <ul>${spot.attractions.map((a) => `<li>${a}</li>`).join("")}</ul>
         `
             : ""
