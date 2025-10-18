@@ -103,8 +103,12 @@
                 </div>
                 <a href="#about-us" class="nav-item nav-link">আমাদের সম্পর্কে</a>
             </div>
-            <a href="#most-visited-places" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">জনপ্রিয় গন্তব্যসমূহ<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <form class="d-none d-lg-flex position-relative ms-3 me-3 nav-search" role="search" id="nav-search-form">
+                <i class="fa fa-search nav-search-icon" aria-hidden="true"></i>
+                <input class="form-control nav-search-input rounded-pill" id="nav-search-input" type="search" placeholder="স্থান খুঁজুন..." aria-label="Search" autocomplete="off" style="min-width:280px;">
+                <div id="nav-search-results" class="search-suggestions"></div>
+            </form>
+            <a href="#most-visited-places" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">জনপ্রিয় গন্তব্যসমূহ<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -382,6 +386,7 @@
     <script src="js/main.js"></script>
     <script src="js/build.js"></script>
     <script src="js/places.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

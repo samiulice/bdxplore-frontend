@@ -1,4 +1,5 @@
 const districts = [
+  // your original entries (kept exactly)
   {
     id: "sirajgonj",
     name: "সিরাজগঞ্জ",
@@ -110,7 +111,7 @@ const districts = [
     ],
   },
 
-  // Newly added districts (empty places)
+  // Newly added (or previously missing) districts with empty places
   { id: "gazipur", name: "গাজীপুর", places: [] },
   { id: "kishoreganj", name: "কিশোরগঞ্জ", places: [] },
   { id: "manikganj", name: "মানিকগঞ্জ", places: [] },
@@ -123,6 +124,7 @@ const districts = [
   { id: "madaripur", name: "মাদারীপুর", places: [] },
   { id: "rajbari", name: "রাজবাড়ী", places: [] },
   { id: "shariatpur", name: "শরীয়তপুর", places: [] },
+
   { id: "bandarban", name: "বান্দরবান", places: [] },
   { id: "brahmanbaria", name: "ব্রাহ্মণবাড়িয়া", places: [] },
   { id: "chandpur", name: "চাঁদপুর", places: [] },
@@ -133,15 +135,18 @@ const districts = [
   { id: "lakshmipur", name: "লক্ষ্মীপুর", places: [] },
   { id: "noakhali", name: "নোয়াখালী", places: [] },
   { id: "rangamati", name: "রাঙ্গামাটি", places: [] },
+
   { id: "bogura", name: "বগুড়া", places: [] },
   { id: "joypurhat", name: "জয়পুরহাট", places: [] },
   { id: "naogaon", name: "নওগাঁ", places: [] },
   { id: "natore", name: "নাটোর", places: [] },
   { id: "chapainawabganj", name: "চাঁপাইনবাবগঞ্জ", places: [] },
   { id: "pabna", name: "পাবনা", places: [] },
+
   { id: "habiganj", name: "হবিগঞ্জ", places: [] },
   { id: "moulvibazar", name: "মৌলভীবাজার", places: [] },
   { id: "sunamganj", name: "সুনামগঞ্জ", places: [] },
+
   { id: "bagerhat", name: "বাগেরহাট", places: [] },
   { id: "chuadanga", name: "চুয়াডাঙ্গা", places: [] },
   { id: "jhenaidah", name: "ঝিনাইদহ", places: [] },
@@ -150,11 +155,13 @@ const districts = [
   { id: "meherpur", name: "মেহেরপুর", places: [] },
   { id: "narail", name: "নড়াইল", places: [] },
   { id: "satkhira", name: "সাতক্ষীরা", places: [] },
+
   { id: "barguna", name: "বরগুনা", places: [] },
   { id: "bhola", name: "ভোলা", places: [] },
   { id: "jhalokathi", name: "ঝালকাঠি", places: [] },
   { id: "patuakhali", name: "পটুয়াখালী", places: [] },
   { id: "pirojpur", name: "পিরোজপুর", places: [] },
+
   { id: "dinajpur", name: "দিনাজপুর", places: [] },
   { id: "gaibandha", name: "গাইবান্ধা", places: [] },
   { id: "kurigram", name: "কুড়িগ্রাম", places: [] },
@@ -162,6 +169,7 @@ const districts = [
   { id: "nilphamari", name: "নীলফামারী", places: [] },
   { id: "panchagarh", name: "পঞ্চগড়", places: [] },
   { id: "thakurgaon", name: "ঠাকুরগাঁও", places: [] },
+
   { id: "netrokona", name: "নেত্রকোণা", places: [] },
   { id: "sherpur", name: "শেরপুর", places: [] },
 ];
@@ -170,7 +178,7 @@ const districts = [
 const divisions = [
   {
     id: "dhaka",
-    name: "ঢাকা",
+    name: "ঢাকা বিভাগ",
     districts: [
       "dhaka",
       "gazipur",
@@ -189,9 +197,9 @@ const divisions = [
   },
   {
     id: "chattogram",
-    name: "চট্টগ্রাম",
+    name: "চট্টগ্রাম বিভাগ",
     districts: [
-      "chattogram",
+      "chittagong",
       "bandarban",
       "brahmanbaria",
       "chandpur",
@@ -206,7 +214,7 @@ const divisions = [
   },
   {
     id: "rajshahi",
-    name: "রাজশাহী",
+    name: "রাজশাহী বিভাগ",
     districts: [
       "rajshahi",
       "bogura",
@@ -215,17 +223,22 @@ const divisions = [
       "natore",
       "chapainawabganj",
       "pabna",
-      "sirajganj",
+      "sirajgonj",
     ],
   },
   {
+    id: "sylhet",
+    name: "সিলেট বিভাগ",
+    districts: ["sylhet", "habiganj", "moulvibazar", "sunamganj"],
+  },
+  {
     id: "khulna",
-    name: "খুলনা",
+    name: "খুলনা বিভাগ",
     districts: [
       "khulna",
       "bagerhat",
       "chuadanga",
-      "jashore",
+      "jessore",
       "jhenaidah",
       "kushtia",
       "magura",
@@ -236,7 +249,7 @@ const divisions = [
   },
   {
     id: "barishal",
-    name: "বরিশাল",
+    name: "বরিশাল বিভাগ",
     districts: [
       "barishal",
       "barguna",
@@ -247,13 +260,8 @@ const divisions = [
     ],
   },
   {
-    id: "sylhet",
-    name: "সিলেট",
-    districts: ["sylhet", "habiganj", "moulvibazar", "sunamganj"],
-  },
-  {
     id: "rangpur",
-    name: "রংপুর",
+    name: "রংপুর বিভাগ",
     districts: [
       "rangpur",
       "dinajpur",
@@ -267,7 +275,7 @@ const divisions = [
   },
   {
     id: "mymensingh",
-    name: "ময়মনসিংহ",
+    name: "ময়মনসিংহ বিভাগ",
     districts: ["mymensingh", "netrokona", "sherpur", "jamalpur"],
   },
 ];
