@@ -129,7 +129,8 @@
 }
 
 @media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
+    /* Only animate the FIRST-LEVEL dropdown under .nav-item */
+    .navbar .nav-item > .dropdown-menu {
         display: block;
         border: none;
         margin-top: 0;
@@ -139,11 +140,30 @@
         transition: .5s;
     }
 
-    .navbar .nav-item:hover .dropdown-menu {
+    .navbar .nav-item:hover > .dropdown-menu {
         top: 100%;
         visibility: visible;
         transition: .5s;
         opacity: 1;
+    }
+
+    /* NESTED submenus are positioned to the right and hidden until their parent is hovered */
+    .navbar .dropdown-menu .dropdown-menu {
+        display: block; /* keep layout, control visibility */
+        top: 0;
+        left: 100%;
+        margin-top: -0.25rem;
+        margin-left: .1rem;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: .3s;
+    }
+
+    .navbar .dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
     }
 }
 
@@ -590,5 +610,39 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+
+
+/* ===== Nested dropdown (Division -> District) ===== */
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Position submenu to the right of its parent */
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -0.25rem;
+    margin-left: 0.1rem;
+}
+
+/* Hover to open submenu on desktop */
+@media (min-width: 992px) {
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Visual cue for submenu toggles inside dropdowns */
+.dropdown-item.dropdown-toggle::after {
+    float: right;
+    margin-left: .255em;
+}
+
+/* Active district look */
+.dropdown-menu .dropdown-item.active {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
 }
 
